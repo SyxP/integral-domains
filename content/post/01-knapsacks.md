@@ -2,7 +2,7 @@
 title = "0-1 Knapsacks"
 
 date = 2018-01-25T00:00:00
-lastmod = 2018-04-01T00:00:00
+lastmod = 2018-01-25T00:00:00
 draft = false
 
 tags = ["compsci", "knapsack"]
@@ -13,7 +13,7 @@ image = ""
 caption = ""
 +++
 
-You have $N$ items, the $i$-th item having integer weight $w\_i \in \mathbb{N}$ and integer value $v\_i \in \mathbb{N}$, and a bag with carrying capacity $B$. Your goal is to take items such that their value is maximized, but their weight cannot exceed the carrying capacity of the bag i.e. find $S \subseteq \\{1,2,...,N\\}$ such that $\sum\_{i \in S} v\_i$ is maximized subject to $\sum\_{i\in S} w\_i \leq B$).
+You have $N$ items, the $i$-th item having integer weight $w\_i \in \mathbb{N}$ and integer value $v\_i \in \mathbb{N}$, and a bag with carrying capacity $B$. Your goal is to take items such that their value is maximized, but their weight cannot exceed the carrying capacity of the bag. In other words, find a subset $S \subseteq \\{1,2,...,N\\}$ such that $\sum\_{i \in S} v\_i$ is maximized subject to $\sum\_{i\in S} w\_i \leq B$.
 
 This is known as **0-1 knapsack problem**. Naïvely, by trying all the subsets, we can derive a $ \Theta(N\cdot 2^N) $ algorithm. This can be sped up by a factor of $ \Theta(N) $ by considering a Gray code. In light of the following algorithm, we shall not discuss this in greater detail.
 
@@ -21,7 +21,7 @@ This is known as **0-1 knapsack problem**. Naïvely, by trying all the subsets, 
 \
 >**Proof** Let $I = \\{1,2,...,\frac{N}{2}\\}$ and $J = \\{\frac{N}{2}+1,\frac{N}{2}+2,...,N\\}$. For each $X \subseteq I$, it suffices to find $Y \subseteq J$ such that $\sum\_{i\in Y} v\_i$ is maximized subject to $\sum\_{i\in Y} w\_i \leq B - \sum\_{i\in X} w\_i$. This can be done efficiently by sorting the set $\\{(\sum\_{i\in Y} w\_i, \sum\_{i\in Y} v\_i) | Y \subseteq J\\}$, reducing the problem to a query on the maximum value of $v\_i$ of a prefix of the sorted set. 
 
-The above technique is also known as "meet in the middle". Commonly, we have a set $S$ and wish to determine a subset $X \subseteq S$ with some property. The technique suggests we should partition $S$ into two sets $I,J$. By enumerating all subsets of $I$ and $J$, this would take $\Theta(|2^I| + |2^J|)$ time. Ideally, we could combine the partial results on $I' = 2^I$ and $J' = 2^J$ more efficiently than quadratic time (i.e. $o(|I'|\cdot |J'|)$), resulting in an algorithm in $o(|2^S|)$ time. Often, this step is done via a combination of sorting and binary search.
+The above technique is also known as "meet in the middle". Generally, we have a set $S$ and wish to determine a subset $X \subseteq S$ with some property. This is done by partitioning $S$ into two sets $I,J$. By enumerating all subsets of $I$ and $J$, this would take $\Theta(|2^I| + |2^J|)$ time. For the technique to succeed, we hope to combine the partial results on $I' = 2^I$ and $J' = 2^J$ more efficiently than quadratic time (i.e. $o(|I'|\cdot |J'|)$), resulting in an algorithm in $o(|2^S|)$ time. Often, this step is done via a combination of sorting and binary search.
 
 >**Problem 2** Can we do better than $\Theta(N\cdot 2^\frac{N}{2})$ time?
 \
@@ -49,7 +49,7 @@ That's disappointing. The 0-1 knapsack problem is unlikely to admit a polynomial
 >
 > * $ f(k,C) = \max(f(k-1,C),f(k-1,C-w\_k) + v\_k) $.
 
-This is not the only special case with an efficient solution. For example, if $v\_i \geq v\_{i+1}$ and $w\_i \leq w\_{i+1}$ for all $i \in \\{1,2,...,N-1\\}$, there is a linear time greedy solution. Another instance we can improve on Algorithm 7 is when we have many items but there are only $C\_w$ distinct possible weights. Here, there is a $\Theta(B \log{C\_w}\cdot (B + \log{N}))$ algorithm. The following problems give a few more variations.
+This is not the only special case with an efficient solution. For example, if $v\_i \geq v\_{i+1}$ and $w\_i \leq w\_{i+1}$ for all $i \in \\{1,2,...,N-1\\}$, there is a linear time greedy solution. Another instance we can improve on Algorithm 7 is when we have only $C\_w$ distinct weights. Here, there is a $\Theta(B \log{C\_w}\cdot (B + \log{N}))$ algorithm. The following problems give a few more variations.
 
 >**Problem 8** Let $L = \sum_{i=1}^N v_i$. Show that the 0-1 knapsack problem can be solved in $\Theta(N\cdot L)$ time.
 >
