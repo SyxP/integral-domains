@@ -1,12 +1,12 @@
 +++
 title = "0-1 Knapsacks"
 
-date = 2018-01-25T00:00:00
-lastmod = 2018-01-25T00:00:00
+date = 2018-01-25
+
 draft = false
 
 tags = ["compsci", "knapsack"]
-summary = "Investigating the 0-1 Knapsack problem."
+summary = "Investigating various approaches on attacking the 0-1 Knapsack problem."
 
 [header]
 image = ""

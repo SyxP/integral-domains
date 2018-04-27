@@ -1,12 +1,12 @@
 +++
 title = "The Diagonal Argument"
 
-date = 2018-03-30T00:00:00
-lastmod = 2018-03-30T00:00:00
+date = 2018-03-30
+
 draft = false
 
 tags = ["compsci", "complexity"]
-summary = "The Diagonal Argument is used to establish the cardinality of the reals. Here, we investigate its implication in complexity theory, as well as the limitations of the method."
+summary = "The Diagonal Argument can be used to establish the cardinality of the reals. Here, we investigate its implication in complexity theory, as well as the limitations of the method."
 
 [header]
 image = ""
