@@ -21,4 +21,4 @@ weight = 5
 
 # Biography
 
-Syx Pek is currently a undergraduate in Mathematics at National University of Singapore. Here, he muses on various topics he encounters in his journey to read the pages of the book.
+Syx Pek is currently an undergraduate in Mathematics at National University of Singapore. Here, he muses on various topics he encounters in his journey to read the pages of the book.
