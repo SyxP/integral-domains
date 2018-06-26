@@ -1,6 +1,6 @@
 +++
 title = "Anatomy of a Puzzle"
-date = 2014-06-01T00:00:00
+date = 2018-06-26T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Lim Yu Chen", "Neo Neng Kai Nigel", "Syx Pek", "Jaren Sta Maria"]
@@ -43,7 +43,7 @@ url_dataset = "sprout18/handout.pdf"
 url_project = ""
 url_slides = "sprout18/presentation.pdf"
 url_video = ""
-url_poster = "sprout18/poster.pdf"
+url_poster = "sprout18/poster.png"
 url_source = "sprout18/tex.zip"
 
 # Custom links (optional).
