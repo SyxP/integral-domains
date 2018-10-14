@@ -34,7 +34,7 @@ defaultContentLanguageInSubdir = false
 enableGitInfo = false
 
 [outputs]
-  home = [ "HTML", "CSS", "RSS" ]
+  home = [ "HTML", "CSS", "RSS", "JSON" ]
   section = [ "HTML", "RSS" ]
 
 # Configure BlackFriday Markdown rendering.
@@ -112,7 +112,7 @@ enableGitInfo = false
   reading_time = true
 
   # Display comment count? Requires commenting to be enabled.
-  comment_count = true
+  comment_count = false
 
   # Display next/previous section pager?
   section_pager = false
@@ -183,38 +183,45 @@ enableGitInfo = false
   ]
 
   # Configuration of publication pages.
-  [params.publications]
+  # [params.publications]
     # Date format (refer to Go's date format: http://fuckinggodateformat.com )
     #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-    date_format = "January, 2006"
+    # date_format = "January, 2006"
 
   # Configuration of project pages.
-  # [params.projects]
+  #[params.projects]
     # List publications and talks related to the project?
-    # list_children = false
+    # list_children = true
 
     # Publication list format.
     #   0 = Simple
     #   1 = Detailed
     #   2 = APA
     #   3 = MLA
-    # publication_format = 3
+    #   4 = Stream
+    # publication_format = 4
+
+    # Talk list format.
+    #   0 = Simple
+    #   1 = Detailed
+    #   2 = Stream
+    # talk_format = 2
 
   # Social/Academic Networking
   #
-  # Icon pack "fa" includes the following social network icons:
+  # Icon pack "fab" includes the following social network icons:
   #
   #   twitter, weibo, linkedin, github, facebook, pinterest, google-plus,
   #   youtube, instagram, soundcloud
   #
-  #   For email icon, use "fa" icon pack, "envelope" icon, and
+  #   For email icon, use "fas" icon pack, "envelope" icon, and
   #   "mailto:your@email.com" as the link.
   #
-  #   Full list: https://fortawesome.github.io/Font-Awesome/icons/
+  #   Full list: https://fontawesome.com/icons
   #
-  # Icon pack "ai" includes the following academic network icons:
+  # Icon pack "ai" includes the following academic icons:
   #
-  #   google-scholar, arxiv, orcid, researchgate, mendeley
+  #   cv, google-scholar, arxiv, orcid, researchgate, mendeley
   #
   #   Full list: https://jpswalsh.github.io/academicons/
 
@@ -267,6 +274,29 @@ enableGitInfo = false
   url = "#contact"
   weight = 4
 
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+# [[menu.main]]
+#    name = "CV"
+#    url = "files/cv.pdf"
+#    weight = 7
+
+# Search.
+[params.search]
+  # Search provider:
+  #   0: No search engine
+  #   1: Built-in (Fuse)
+  #   2: Algolia (https://www.algolia.com)
+  engine = 1
+
+  # Configuration of Algolia search engine.
+  # Paste the values from your Algolia dashboard.
+  [params.search.algolia]
+    app_id = ""
+    api_key = ""
+    index_name = ""
+    show_logo = false
+
 # Taxonomies.
 [taxonomies]
   tag = "tags"
@@ -275,7 +305,20 @@ enableGitInfo = false
 
 # Languages
 #   Create a [languages.X] block for each language you want, where X is the language ID.
+#   Refer to https://sourcethemes.com/academic/docs/language/
 
 # Configure the English version of the website.
-[Languages.en]
+[languages.en]
   languageCode = "en-us"
+
+# Uncomment the lines below to configure your website in a second language.
+#[languages.zh]
+#  languageCode = "zh-Hans"
+#  title = "Chinese website title..."
+#  [languages.zh.params]
+#    name = "Your name in Chinese..."
+#    role = "Your role in Chinese..."
+#  [[languages.zh.menu.main]]
+#    name = "Wo"
+#    url = "#about"
+#    weight = 1
