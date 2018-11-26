@@ -17,17 +17,20 @@ Since 1999, Mulmuley and his collaborators devised an innovative approach to tac
 
 ---
 
-Let $G$ be a group, $K$ be an algebraically closed field and $V$ be a finite-dimension (left) $K[G]$-module with dimension $n = \dim(G)$. Let us first stop to recall the definition of a $G$-module. A **left $R$-module** on a ring $R$ is an abelian group $(M, +)$ with a left action $\rho : R \times M \to M$ having the following properties:
+Let $G$ be a group, $K$ be an algebraically closed field and $V$ be a finite-dimension (left) $K[G]$-module with dimension $n = \dim(G)$. Let us first stop to recall the definition of a module. A **left $R$-module** on a ring $R$ is an abelian group $(M, +)$ with a left action $\rho : R \times M \to M$ having the following properties:
 
 1. $\rho (r, (x + y)) = \rho (r, x) + \rho (r, y)$,
 2. $\rho (r+s, x) = \rho (r, x) + \rho (s, x)$,
-3. $\rho (rs, x) = \rho (r, \rho (s, x)),
+3. $\rho (rs, x) = \rho (r, \rho (s, x))$,
 4. $\rho (1_R, x) = x$
 
-Without delay, let us see some examples of $R$-modules. 
+Without delay, let us see some examples of $R$-modules. We will only discuss left modules as the case for right modules is analogous.
 
->**Example 1** Let $R$ be a field. Then a $R$-module is $R$-vector space.
+>**Example 1** Let $R$ be a field. Then, $M$ is a $R$-module if and only if $M$ is a $R$-vector space.
 \
 >**Example 2** For any abelian group $M$ with the action $$\forall m \in M, \rho (k, m) = k\cdot m$$ forms a $\mathbb{Z}$-module. Conversely, every abelian group is a module over $\mathbb{Z}$ in a unique, canonical fashion.
 \
->**Example 3** Let $G$ be an arbitrary group. Recall that a **representation** of $G$ is a vector space $V$ over $K$ with a group homomorphism $\phi : G \to Aut(V).$
+>**Example 3** Recall that an **ideal** $I$ of a ring $(R, +, \cdot)$ is a subset of $R$ such that $(I, +)$ is a subgroup of $(R, +)$ and $$\forall x \in I\ \forall r \in R, x\cdot r, r\cdot x \in I,$$ in other words, it is an additive subgroup that absorbs multiplication. Here, $I$ is also an $R$-module by setting $$\forall x \in I\ \forall r \in R, \rho (x,r) = x\cdot r.$$
+
+
+Next, we shall discuss representations and group rings. A **representation** of $G$ is a vector space $V$ over $K$ with a group homomorphism $\phi : G \to Aut(V).$ Then the **group ring** $K[G]$ is defined by 
