@@ -30,4 +30,4 @@ Without delay, let us see some examples of $R$-modules.
 \
 >**Example 2** For any abelian group $M$ with the action $$\forall m \in M, \rho (k, m) = k\cdot m$$ forms a $\mathbb{Z}$-module. Conversely, every abelian group is a module over $\mathbb{Z}$ in a unique, canonical fashion.
 \
->**Example 3** Let $G$ be an arbitrary group. Recall that a **representation** of $G$ is a vector space $V$ over $K$ with a group homomorphism $\phi : G \to Aut(V).$ Every group representation induces a $G$-module taking $M = V$ and $$\forall g \in G\ \forall m \in M, \rho (g, m) = \phi(g)\cdot m.$$
+>**Example 3** Let $G$ be an arbitrary group. Recall that a **representation** of $G$ is a vector space $V$ over $K$ with a group homomorphism $\phi : G \to Aut(V).$
