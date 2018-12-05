@@ -68,7 +68,7 @@ In the spirit of \[[Wilf 1982](https://www.jstor.org/stable/2321713)\], the noti
 
 The ring of invariants $K[V]^G$ has a set of generators with  **succinct encoding** if there exists an algebraic circuit $C = C[V,m]$ with rational constants of at most $poly(n,m)$ bit-size over the coordinates $v = (v\_1,...,v\_n)$ of $V$ and auxillary variables $y = (y\_1,...,y\_k)$ and $k$ is at most $poly(n)$, satisfying: $$C(v,y) = \sum_\mu f\_\mu(v)\mu(y),$$ where $\mu$ are monomials in the auxillary variables $y$, $f\_\mu(v) \in K[V]^G$ and $f\_\mu(v)$ generates $ K[V]^G$.
 
-This could be seen as a "generating-function" of the generators (no pun intended). Here, we can have exponentially many generators, but yet succinctly output them with small output size. 
+This could be seen as a "generating-function" of the generators (no pun intended). Here, we can have exponentially many generators, but yet succinctly output them with small output size. It is not hard to see that if you have finitely many generators, this would also be considered a succint encoding.
 
 What is the status of this problem? Well we have the following theorem.
 
