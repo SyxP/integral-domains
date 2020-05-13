@@ -18,7 +18,7 @@ organizations:
   url: "http://ww1.math.nus.edu.sg/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Syx Pek is currently an undergraduate in Mathematics at National University of Singapore. Here, he muses on various topics he encounters in his journey to read the pages of the book.
+bio: Syx Pek is currently (and always will be) a student of Mathematics.
 
 interests:
 - Commutative Algebra
@@ -70,5 +70,7 @@ email: ""
 # - Visitors
 ---
 
-Syx Pek is currently an undergraduate in Mathematics at National University of Singapore. Here, he muses on various topics he encounters in his journey to read the pages of the book.
+Syx Pek is currently an undergraduate in Mathematics at National University of Singapore. 
+
+Pólya once said "It is better to solve one problem five different ways, than to solve five problems one way." With that spirit, he muses on various topics he encounters in his journey to read the pages of the book.
 
