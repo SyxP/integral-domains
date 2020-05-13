@@ -122,14 +122,17 @@ merely sketch the proof here and I refer you to study Serre's excellent text (Ch
 \
 >**Sketch of a Proof** 
 >
->1. Show that $\zeta(s)$ is meromorphic on $\Re(s) > 0$ with a simple pole at $s = 1.$
-Hence, $L(\sigma, 1)$ has a simple pole when $\sigma = 1.$
+>1. Show that $\zeta(s)$ is meromorphic on $\Re(s) > 0$ with a simple pole at $s = 1$, and holomorphic away from $s = 1$.
+Hence, $L(\sigma, 1)$ has a simple pole when $\sigma = 1$ and holomorphic away from $\sigma = 1$ on
+$\Re(\sigma) > 0$ because
+$L(s,1)$ is "in essence" equal to $\zeta(s)$ except for finitely many terms, and thus
+share similar behaviour.
 >2. For any **Dirichlet series**, a series of the form $D(s) = \sum_k \frac{a_k}{k^s}$,
 when $a_k$ is bounded, $D(s)$ converges absolutely on $\Re(s) > 1$ and when $\sum_{k = m}^n a_k$
 is bounded for all $m, n$, $D(s)$ converges on $\Re(s) > 0$.
 >3. Consider the function $\zeta\_\alpha (\sigma) =  \prod\_{\chi \in \chi\_a} L(\sigma,\chi)$. By
 the second step, $L(\sigma, \chi)$ is finite for all $\Re(\sigma) > 0$ and $\chi$ non-trivial. Hence
-$\zeta_\alpha(\sigma)$ is meromorphic on $Re(\sigma) > 0$ with a simple pole at $\sigma = 1.$
+$\zeta_\alpha(\sigma)$ is meromorphic on $\Re(\sigma) > 0$ with a simple pole at $\sigma = 1.$
 >4. If we have that $L(1, \chi)$ is zero for some non-trivial $\chi$, then $\zeta\_\alpha$ will be
 analytic on $\Re(\sigma) > 0.$
 >5. When $p \nmid \alpha$, let $|p|$ denote the order of $p$ in $(\mathbb{Z}/\alpha\mathbb{Z})^\times$. Then,
