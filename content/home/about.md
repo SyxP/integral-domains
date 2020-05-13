@@ -1,24 +1,14 @@
 +++
-# About/Biography widget.
-widget = "about"
-active = true
-date = 2018-04-20T00:00:00
+# About widget.
+widget = "about"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = true  # This file represents a page section.
+active = true  # Activate this widget? true/false
+weight = 20  # Order that this section will appear in.
 
-# Order that this section will appear in.
-weight = 5
+title = "Biography"
 
-# List your academic interests.
-[interests]
-  interests = [
-    "Algebraic Topology",
-    "Extremal Combinatorics",
-    "Algorithms and Computability"
-  ]
-
-# List your qualifications (such as academic degrees).
- 
+# Choose the user profile to display
+# This should be the username of a profile in your `content/authors/` folder.
+# See https://sourcethemes.com/academic/docs/get-started/#introduce-yourself
+author = "admin"
 +++
-
-# Biography
-
-Syx Pek is currently an undergraduate in Mathematics at National University of Singapore. Here, he muses on various topics he encounters in his journey to read the pages of the book.

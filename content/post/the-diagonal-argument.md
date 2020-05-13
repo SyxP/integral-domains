@@ -15,7 +15,8 @@ caption = ""
 
 In 1891, George Cantor showed us that there are more real numbers than there are natural numbers.
 
->**Theorem 1** \[[Cantor 1891](http://web2.slc.qc.ca/VCarrier/Mathematics\_BNJ/Cantor\_1891.pdf)\] There is no bijection between $(0,1) \in \mathbb{R}$ and $\mathbb{N}$.
+>**Theorem 1** \[[Cantor 1891](http://web2.slc.qc.ca/VCarrier/Mathematics\_BNJ/Cantor\_1891.pdf) \] There is no bijection between $(0,1) \in \mathbb{R}$ and $\mathbb{N}$.
+\
 >**Proof** Assume the existence of a bijective function $f : \mathbb{N} \to (0,1) $, we claim that there exists $\alpha \in (0,1)$ such that $\\{ \ k \in \mathbb{N}\ \mid\  f(k) = \alpha \ \\}$ is empty. This is done via construction. Denote $g\_i(x)$ be the $i$-th digit in the decimal expansion of $x$. Let $g\_i(\alpha) = 1 + \[g\_i(f(i)) = 1\]$[^1], then for any $\ k \in \mathbb{N}$, $\alpha$ will differ from $f(k)$ in the $k$-th digit.
 
 Today, we shall exploit the power of this argument, and to see its limitations. Chiefly, we will apply it in the context of complexity theory. As such, we shall fix our model of computation to the Multi-tape Turing Machines (MTM).
@@ -38,11 +39,11 @@ A complexity class is a set of decision problems. We denote $\textrm{DTIME}(f(n)
 
 >**Lemma 4 (Linear Speedup)** Let $f$ be a time-constructible function, and $c \in \mathbb{R}^+$. If a MTM computes a decision problem in $f(X)$ steps, there exists a MTM that computes the same decision problem in $cf(X) + X + 2$ steps.
 \
->**Proof** See \[[Papadimitrou 2003](https://dl.acm.org/citation.cfm?id=1074233)\] page 32. 
+>**Proof** See \[[Papadimitrou 2003](https://dl.acm.org/citation.cfm?id=1074233) \] page 32. 
 >
 >**Theorem 5 (Deterministic Time Hierarchy)** 
 \
->\[[Hartmanis and Stearns 1965](http://www.ams.org/journals/tran/1965-117-00/S0002-9947-1965-0170805-7/home.html)\] Let $f, g$ be time-constructible functions, satisfying the property $f(X)\log{(f(X))} = o(g(X))$. Then, there exists a decision problem $h(X)$ not computable in $f(X)$ time but computable in $g(X)$ time. That is,
+>\[[Hartmanis and Stearns 1965](http://www.ams.org/journals/tran/1965-117-00/S0002-9947-1965-0170805-7/home.html) \] Let $f, g$ be time-constructible functions, satisfying the property $f(X)\log{(f(X))} = o(g(X))$. Then, there exists a decision problem $h(X)$ not computable in $f(X)$ time but computable in $g(X)$ time. That is,
 >$$\textrm{DTIME}(f(X)) \subsetneq \textrm{DTIME}(g(X))).$$
 \
 >**Proof** Unsurprisingly, we will use the diagonal argument to construct a decision problem $h(X)$. Let the set of MTM computing decision problems computable in $f(X)$ time be $D = \\{D\_i\\} \_ {i \in \mathbb{N}}$. 
@@ -55,7 +56,7 @@ Let us reflect on this flavor of the diagonal argument closely. We have construc
 
 Whenever we have a theorem, we should always examine its conditions. The time-constructability of $f$ is needed during the simulation, while the time-constructability of $g$ is redundant. Can we relax the condition? A result by [Borodin 1972](https://dl.acm.org/citation.cfm?id=321691) and Trakhtenbrot shows it is necessary for $f$ to be time-constructible. The other condition is that $f(X)\log{(f(X))} = o(g(X))$, and this is due to our simulation. It is not known if it is possible to simulate faster, but Problem 7 shows a strengthening in a special case.
 
->**Problem 6 (Nondeterministic Time Hierachy)** \[[Cook 1972](https://dl.acm.org/citation.cfm?doid=800152.804913)\] Show if $f, g$ are time-constructible functions and $f(X+1) = o(g(X))$, then
+>**Problem 6 (Nondeterministic Time Hierachy)** \[[Cook 1972](https://dl.acm.org/citation.cfm?doid=800152.804913) \] Show if $f, g$ are time-constructible functions and $f(X+1) = o(g(X))$, then
 >$$\textrm{NTIME}(f(X)) \subsetneq \textrm{NTIME}(g(X)).$$
 >**Problem 7 (Padding)** Let $f,g,h$ be time-constructible functions. Show that if $\textrm{DTIME}(f(X)) = \textrm{DTIME}(g(X))$, then $$\textrm{DTIME}(f(h(X))) = \textrm{DTIME}(g(h(X)).$$ 
 >Fix $a\_1, a\_2, b\_1, b\_2 \in \mathbb{Q}^{\geq 0}$ with
@@ -82,7 +83,7 @@ For the rest of this article, set $\textrm{P} = \cup\_{c \in \mathbb{N}} \textrm
 >
 >**Problem 10 (No Complementary Speedup)** 
 \
-> \[[Chandra and Stockmeyer 1976](http://ieeexplore.ieee.org/document/4567893/)\] Show via diagonalization that for all time-constructible $f(X)$ and $k \in \mathbb{N}$,
+> \[[Chandra and Stockmeyer 1976](http://ieeexplore.ieee.org/document/4567893/) \] Show via diagonalization that for all time-constructible $f(X)$ and $k \in \mathbb{N}$,
 >$$\exists\textrm{TIME}(f(X), k) \nsubseteq \forall\textrm{TIME}(o(f(X)), k).$$
 
 ---
@@ -101,7 +102,7 @@ We never formally defined diagonalization, only giving it a sketch. In some sens
 
 Observation 11 gives us a barrier to the technique. If for two structural complexity classes $A$ and $B$, there exist complexity classes $C, D$ such that $A^C = B^C$ and $A^D \neq B^D$, then diagonalization can never help us determine which is the case. As aforementioned, this is the case for the central problem $\textrm{P} \stackrel{?}{=} \textrm{NP}$:
 
->**Theorem 12** \[[Baker, Gill and Solovay 1975](https://epubs.siam.org/doi/abs/10.1137/0204037)\] There exist complexity classes $A$, $B$ such that $\textrm{P}^A = \textrm{NP}^A$ and $\textrm{P}^B \neq \textrm{NP}^B$.
+>**Theorem 12** \[[Baker, Gill and Solovay 1975](https://epubs.siam.org/doi/abs/10.1137/0204037) \] There exist complexity classes $A$, $B$ such that $\textrm{P}^A = \textrm{NP}^A$ and $\textrm{P}^B \neq \textrm{NP}^B$.
 \
 >**Proof** This is done by constructing complexity classes $A$ and $B$.
 \
@@ -121,8 +122,8 @@ Naturally, we would like to know what other classes would have the relativizatio
 
 >For the following problems, we define $\exists\_k\textrm{P} = \bigcup\_{c \in \mathbb{N}} \exists\textrm{TIME}(X^c, k)$ and $\forall\_k\textrm{P}= \bigcup\_{c \in \mathbb{N}} \forall\textrm{TIME}(X^c, k)$. 
 >
->**Problem 13** \[[Baker and Selman 1979](https://www.sciencedirect.com/science/article/pii/0304397579900434)\] Show there exist complexity classes $A$,  $B$ such that $\exists\_1\textrm{P}^A = \forall\_1\textrm{P}^A$ and $\exists\_1\textrm{P}^B \neq \forall\_1\textrm{P}^B$.
+>**Problem 13** \[[Baker and Selman 1979](https://www.sciencedirect.com/science/article/pii/0304397579900434) \] Show there exist complexity classes $A$,  $B$ such that $\exists\_1\textrm{P}^A = \forall\_1\textrm{P}^A$ and $\exists\_1\textrm{P}^B \neq \forall\_1\textrm{P}^B$.
 >
->**Problem 14** \[[Yao 1985](https://dl.acm.org/citation.cfm?id=1382893)\]  Prove for all $k \geq 2$, there exist complexity classes $A, B$ such that $\exists\_k\textrm{P}^A = \forall\_k\textrm{P}^A$ and $\exists\_k\textrm{P}^B \neq \forall\_k\textrm{P}^B$.
+>**Problem 14** \[[Yao 1985](https://dl.acm.org/citation.cfm?id=1382893) \]  Prove for all $k \geq 2$, there exist complexity classes $A, B$ such that $\exists\_k\textrm{P}^A = \forall\_k\textrm{P}^A$ and $\exists\_k\textrm{P}^B \neq \forall\_k\textrm{P}^B$.
 
 [^1]: This is the **Iverson Bracket** notation, $\[P\]$, which evaluates to 1 when $P$ is true, 0 otherwise.

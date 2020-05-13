@@ -1,7 +1,0 @@
-| Title/Idea                    | Notes                                                         |
-|-------------------------------+---------------------------------------------------------------|
-| Dirichlet's Theorem           | Need to finish proof that Dirichlet Zeta Functions properties |
-| Elementary Irrationality Test | Show Generalized Engel Summation Theorem                      |
-|                               | Else, can change section to continued fractions?              |
-| Eckmann - Hilton Argument     | Group Objects in Group is Abelian                             |
-|                               | Fundamental Group of Topological Group is Abelian?            |                                                                                               |

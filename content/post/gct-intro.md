@@ -3,7 +3,7 @@ title = "Geometric Complexity Theory - An Introduction"
 
 date = 2018-11-26
 
-draft = false
+draft = true
 
 tags = ["math", "alggeom", "compsci", "complexity"]
 summary = "An introduction to Geometric Complexity Theory (GCT) without heavy mathematical machinery. We will discuss the key ideas in GCT and apply it to investigating the Polynomial Identity Testing problem."
