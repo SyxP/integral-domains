@@ -78,7 +78,7 @@ The following two exercises showcases the equivalence of the perspectives.
 
 > **Exercise 5** Check that an $R$-algebra is an $R$-module, and an homomorphism of $R$-algebras
 is a homomorphism of $R$-modules. 
-> **Exercise 6** Show that if $S$ is an $R$-module and a ring, then it can be viewed as an $R$-algebra. Moreover, if an homomorphism of underlying rings between two $R$-algebras happen to 
+> **Exercise 6** Show that if $S$ is an $R$-module and a ring, then it can be viewed as an $R$-algebra. Moreover, if a ring homomorphism of underlying rings between two $R$-algebras happen to 
 be a $R$-module homomorphism, then it is an homomorphism of $R$-algebras.
 
 In light of this correspondence, one can give many adjectives to $R$-algebras.
