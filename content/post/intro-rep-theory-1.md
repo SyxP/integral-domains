@@ -12,7 +12,7 @@ summary = ""
 image = ""
 caption = ""
 +++
-This is still in the progress of being written(!)
+This is still in the progress of being written.
 
 This is a series of blog posts that plan on covering a topic both extremely elegant
 and surprisingly useful. Here, we assume basic familiarity with the notions of groups,
@@ -95,14 +95,60 @@ For instance, a **commutative** $R$-algebra, is merely a commutative ring (and a
 products. If you're not familiar with it too, you can safely omit it. We will come back to study
 tensor products in greater detail.)
 
+<!-- Radical-->
+There are some very special ideals in any ring, one of which would serve some importance for us to study.
+
+> **Definition 10** The **Jacobson radical** of a ring $R$, denoted $\newcommand{\rad}{\mathrm{rad}} \rad R$
+is the intersection of all the maximal right ideals of $R$.
+
+From the definition, as the intersection of two right ideals is a right ideal, we have the the Jacobson radical
+is a right ideal. What is more surprising is that it is also a left ideal. 
+
+> **Theorem 11** The Jacobson radical of a ring $R$ is a left ideal.
+\
+> **Proof** <!-- TODO -->
+
+We shall defer the examples as we will often return to this notion as we proceed in the course.
+However, here are some additional exercises to help one contemplate about the Jacobson radical. 
+These exercises are not necessarily easy, but are standard. 
+
+> **Exercise 12** Show $\rad (R/(\rad R)) = 0$.
+\
+> **Exercise 13** Let $f: R \to S$ be a surjective ring homomorphism. Prove that $f(\rad R) \subseteq \rad S$ and that equality need
+not be strict.
+\
+> **Exercise 14** Show that the intersection of all the (two-sided) ideals of a ring $R$ need not be equal to $\rad R$. (We shall
+see later that this is not the case when $R$ is a $\mathbb k$-algebra)
+
 ---
 
 ## Representations
 
+<!-- Definition of Rep, Examples, Equivalence of Def to Group, Nakayama Lemma -->
+
+Let us now define the main object of our study.
+> **Definition 15** A representation of an $R$-algebra $A$ is a (left) $A$-module!
+
+What initially confused me was that this is not the most common definition one can find. Let us look at some other definitions.
+We've seen in Example 3.4 that if we have vector space $V$ over a field $\mathbb k$, that
+the ring $\End_{\mathbb k}(V)$ is also a $\mathbb k$-algebra. Some texts would define
+a representation of a $\mathbb k$-algebra $A$ as an algebra homomorphism $\rho: A \to \End_{\mathbb k}(V)$.
+Here, we actually do have an $A$-module, $V$!
+The action of $a \in A$ is taken to be $a \cdot v = \rho(a)(v)$, for all $v \in V$.
+
+Another definition (especially of texts specialising in group representations) is that a representation 
+of a group $G$, is a group homomorphism $\newcommand{\Aut}{\mathrm{Aut}} \rho: G \to \Aut_\mathbb{k}(V)$.
+We can of course repeat the same game as above and have that $V$ would be a module of the group ring $\mathbb{k}[G]$.
+(Check this and explain the difference between endomorphisms above and automorphisms here.)
+
+Normally, we would devote some time to talk about their morphisms, but here they are just module homomorphisms.
+Instead, let us study some examples of representations and their morphisms.
+
 ---
 
-Schur's Lemma, Wedderburn-Artin 
+## Schur's Lemma
 
+<!-- Simplicity, Indecomposable, Schur's Lemma,  -->
 ---
 
 ## Discussion and References
@@ -119,4 +165,7 @@ I've utilise the following books in the process of creation of this notes.
 4. [Alexander Zimmermann - Representation Theory A Homological Algebra Point of View](https://www.springer.com/gp/book/9783319079677)
 5. [Ibrahim Assem, Andrzej Skowronski, and Daniel Simson - Elements of the Representation Theory of Associative Algebras, Volume 1: Techniques of Representation Theory](https://www.cambridge.org/core/books/elements-of-the-representation-theory-of-associative-algebras/AA8066B5809D0F556A540400AD3A419C)
 
-Naturally, some commutative algebra books will not be amiss when studying the subject.
+Naturally, some commutative algebra books will not be amiss when studying the subject. The following are some I enjoy.
+
+1. [Paolo Aluffi - Algebra Chapter 0](https://bookstore.ams.org/gsm-104)
+2. [Lorenzo Ramero - The Grimoire Project](http://math.univ-lille1.fr/~ramero/teaching.html)
