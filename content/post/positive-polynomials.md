@@ -30,7 +30,7 @@ This allows us to check if a quadratic is a positive polynomial. Surprisingly, w
 polynomial in $\mathbb{R}[x]$.
 
 > **Theorem 2** Let $p \in \mathbb{R}[x]$, then $p$ is non-negative if and only if
-there exists $f,g \in \mathbb{R}[x]$ such that $p = f^2 + g^2.$
+there exist $f,g \in \mathbb{R}[x]$ such that $p = f^2 + g^2.$
 ---
 If $p$ is really of the form $f^2 + g^2$, then it must be the case that it is non-negative. We shall concentrate
 our efforts to show the other direction. But first, we need to establish a few lemmas on the nature of roots
@@ -56,7 +56,7 @@ This settles the case for the real roots, now for the complex roots.
 > **Proof** Observe that $\overline{p(x)} = p(\overline{x})$.
 
 Hence, putting both lemmas together, we get
-> **Corollary 5** Let $p \in \mathbb{R}[x]$ be a non-negative polynomial. Then there exists $k, a_i \in \mathbb{C}$
+> **Corollary 5** Let $p \in \mathbb{R}[x]$ be a non-negative polynomial. Then there exist $k, a_i \in \mathbb{C}$
 such that $p(x) = k\prod_{i=1}^n (x - a_i)(x - \overline{a_i})$.
 >
 > **Proof of Theorem 2** Note that 
@@ -66,7 +66,7 @@ such that $p(x) = k\prod_{i=1}^n (x - a_i)(x - \overline{a_i})$.
 ---
 
 With this result, it is natural to ask if it generalizes. Unfortunately, [Hilbert 1888](https://doi.org/10.1007/BF01443605)
-shows that there exists multivariate positive polynomials which cannot be written as a finite sum of squares. His proof was non-constructive, and we shall see a concrete counterexample here.
+shows that there exist multivariate positive polynomials which cannot be written as a finite sum of squares. His proof was non-constructive, and we shall see a concrete counterexample here.
 
 > **Counterexample 6** \[[Motzkin 1967](https://mathscinet.ams.org/mathscinet-getitem?mr=0223521) [^1] \]
 > Let 
