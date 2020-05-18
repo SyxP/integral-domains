@@ -32,41 +32,40 @@ polynomial in $\mathbb{R}[x]$.
 > **Theorem 2** Let $p \in \mathbb{R}[x]$, then $p$ is non-negative if and only if
 there exist $f,g \in \mathbb{R}[x]$ such that $p = f^2 + g^2.$
 ---
-If $p$ is really of the form $f^2 + g^2$, then it must be the case that it is non-negative. We shall concentrate
-our efforts to show the other direction. But first, we need to establish a few lemmas on the nature of roots
-of non-negative polynomials.
+If $p$ is indeed of the form $f^2 + g^2$, then it must be    non-negative. We shall concentrate
+our efforts to show the other direction. But first, we need to establish a few lemmas on the nature of roots of non-negative polynomials.
 
-> **Lemma 3** Let $p \in \mathbb{R}[x]$ be a non-negative polynomial and $a$ be a real root. Then
+> **Lemma 3** Let $p \in \mathbb{R}[x]$ be a non-negative polynomial and $a$ be a real root of $p$. Then
 we can find $q \in \mathbb{R}[x]$ such that $p(x) = (x-a)^2q(x)$.
 \
 > **Proof** By the polynomial remainder theorem, we can find $m \in \mathbb{R}[x]$
 such that $p(x) = (x-a)m(x)$. If $m(a) = 0$, then we can find $q \in \mathbb{R}[x]$
-so $m(x) = (x-a)q(x)$ and we have our result.
+such that $m(x) = (x-a)q(x)$ and we have our result.
 >
-> So let us suppose that $m(a) \neq 0$. Then there exists an $\epsilon > 0$ such that
+> So let us suppose that $m(a) \neq 0$. Then, there exists an $\epsilon > 0$ such that on
 > $(a - \epsilon, a + \epsilon)$, the polynomial $m$ has no roots, and thus by intermediate
 > value theorem, $m(a - \epsilon)$ and $m(a + \epsilon)$ share the same sign. 
-> But then $p(a - \epsilon) = -\epsilon m(a - \epsilon$ and
+> But then $p(a - \epsilon) = -\epsilon m(a - \epsilon)$ and
 > $p(a + \epsilon) = \epsilon m(a + \epsilon)$ would differ in sign, contradicting the non-negativity of $p$.
 
 This settles the case for the real roots, now for the complex roots.
 
-> **Lemma 4** Let $p \in \mathbb{R}[x]$ and $a$ be a root. Then, $\overline{a}$ is also a root.
+> **Lemma 4** Let $p \in \mathbb{R}[x]$ and $a$ be a root of $p$. Then, $\overline{a}$ is also a root.
 \
 > **Proof** Observe that $\overline{p(x)} = p(\overline{x})$.
 
 Hence, putting both lemmas together, we get
-> **Corollary 5** Let $p \in \mathbb{R}[x]$ be a non-negative polynomial. Then there exist $k, a_i \in \mathbb{C}$
-such that $p(x) = k\prod_{i=1}^n (x - a_i)(x - \overline{a_i})$.
+> **Corollary 5** Let $p \in \mathbb{R}[x]$ be a non-negative polynomial. Then there exist $k \in \mathbb{R}$ and $a_1,a_2,..., a_n \in \mathbb{C}$
+such that $$p(x) = k\prod_{i=1}^n (x - a_i)(x - \overline{a_i}).$$
 >
 > **Proof of Theorem 2** Note that 
-> $$ p(x) = k\prod_{i=1}^n (x - a_i)(x - \overline{a_i}) =  k\prod_{i=1}^n (x^2 - |a_i|^2),$$
+> $$ p(x) = k\prod_{i=1}^n (x - a_i)(x - \overline{a_i}) =  k\prod_{i=1}^n \left((x - \Re(a_i))^2 + \Im(a_i)^2\right),$$
 > and $(a^2 + b^2)(c^2 + d^2) = (ac-bd)^2 + (ad-bc)^2$. 
 
 ---
 
 With this result, it is natural to ask if it generalizes. Unfortunately, [Hilbert 1888](https://doi.org/10.1007/BF01443605)
-shows that there exist multivariate positive polynomials which cannot be written as a finite sum of squares. His proof was non-constructive, and we shall see a concrete counterexample here.
+shows that there exist multivariate positive polynomials which cannot be written as a finite sum of squares. His proof is non-constructive, and we shall see a concrete counterexample here.
 
 > **Counterexample 6** \[[Motzkin 1967](https://mathscinet.ams.org/mathscinet-getitem?mr=0223521) [^1] \]
 > Let 
