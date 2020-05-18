@@ -56,11 +56,11 @@ This settles the case for the real roots, now for the complex roots.
 > **Proof** Observe that $\overline{p(x)} = p(\overline{x})$.
 
 Hence, putting both lemmas together, we get
-> **Corollary 5** Let $p \in \mathbb{R}[x]$ be a non-negative polynomial. Then there exists $a_1, a_2, ..., a_n \in \mathbb{C}$
-such that $p(x) = \prod_{i=1}^n (x - a_i)(x - \overline{a_i})$.
+> **Corollary 5** Let $p \in \mathbb{R}[x]$ be a non-negative polynomial. Then there exists $k, a_i \in \mathbb{C}$
+such that $p(x) = k\prod_{i=1}^n (x - a_i)(x - \overline{a_i})$.
 >
 > **Proof of Theorem 2** Note that 
-> $$ p(x) = \prod_{i=1}^n (x - a_i)(x - \overline{a_i}) =  \prod_{i=1}^n (x^2 - |a_i|^2),$$
+> $$ p(x) = k\prod_{i=1}^n (x - a_i)(x - \overline{a_i}) =  k\prod_{i=1}^n (x^2 - |a_i|^2),$$
 > and $(a^2 + b^2)(c^2 + d^2) = (ac-bd)^2 + (ad-bc)^2$. 
 
 ---
