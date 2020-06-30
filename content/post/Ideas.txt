@@ -1,0 +1,7 @@
+Ideas for future posts.
+
+1. Chromatic Number Algorithms
+2. Steiner Trees
+    Dreyfus Wagner
+    Mobius Speedups
+3. Cracking for Linear Congruential Generators

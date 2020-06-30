@@ -106,7 +106,16 @@ is a right ideal. What is more surprising is that it is also a left ideal.
 
 > **Theorem 11** The Jacobson radical of a ring $R$ is a left ideal.
 \
-> **Proof** <!-- TODO -->
+> **Proof** Let $J \subseteq R$ be an ideal. The following are equivalent:
+> 1. $J$ is the intersection of all the maximal right ideals.
+> 2. $J$ is the intersection of all the maximal left ideals.
+> 3. An element $b \in R$ is in $J$ if and only if $1 - br$ has a right inverse for all $r \in R$.
+> 4. An element $b \in R$ is in $J$ if and only if $1 - rb$ has a left inverse for all $r \in R$.
+> 5. An element $b \in R$ is in $J$ if and only if $1 - br$ is a unit for all $r \in R$.
+> 6. An element $b \in R$ is in $J$ if and only if $1 - rb$ is a unit for all $r \in R$.
+> 
+> We will note without proof that $(1) \iff (3) \iff (5)$ and $(2) \iff (4) \iff (6)$. This is not very difficult and everyone is encouraged to try it. This is an equivalent way of defining Jacobson radicals and most textbooks will furnish a proof. \
+> Finally, a little algebraic trickery finishes it. Let $1 - xy$ be a unit. Then, $(1 - x(1- xy)^{-1}y)(1-yx) = (1-yx)(1 - x(1- xy)^{-1}y) = 1,$ showing $(5) \iff (6)$.
 
 We shall defer the examples as we will often return to this notion as we proceed in the course.
 However, here are some additional exercises to help one contemplate about the Jacobson radical. 
