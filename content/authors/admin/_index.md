@@ -15,13 +15,13 @@ role: Undergraduate in Mathematics
 # Organizations/Affiliations
 organizations:
 - name: National University in Singapore
-  url: "http://ww1.math.nus.edu.sg/"
+  url: "http://www.math.nus.edu.sg/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: Syx Pek is currently (and always will be) a student of Mathematics.
 
 interests:
-- Commutative Algebra
+- Representation Theory & Commutative Algebra
 - Extremal Combinatorics
 - Algorithms and Computability
 
