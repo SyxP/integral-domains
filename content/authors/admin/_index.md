@@ -21,7 +21,8 @@ organizations:
 bio: Syx Pek is currently (and always will be) a student of Mathematics.
 
 interests:
-- Representation Theory & Commutative Algebra
+- Representation Theory
+- Commutative Algebra
 - Extremal Combinatorics
 - Algorithms and Computability
 
