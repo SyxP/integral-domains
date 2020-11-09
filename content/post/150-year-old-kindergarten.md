@@ -3,7 +3,7 @@ title = "The 150-Year-Old Kindergarten"
 
 date = 2020-09-23
 
-draft = false
+draft = true
 
 tags = ["algebra", "fiction"]
 summary = "A new caretaker's experience in the kindergarten of algebraic groups"
