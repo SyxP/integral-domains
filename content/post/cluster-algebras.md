@@ -1,12 +1,12 @@
 +++
-title = "Cluster Algebras"
+title = "Grassmanians"
 
 date = 2020-09-11
 
 draft = false
 
 tags = ["math", "representation theory", "algebra", "introduction"]
-summary = "An example-based introduction to Cluster Algebras"
+summary = "An example-based introduction to Grassmanians"
 
 [header]
 image = ""
@@ -14,7 +14,7 @@ hattion = ""
 +++
 
 
-Our goal today is to understand what a Cluster Algebra is. 
+Our goal today is to understand what a Grassmanian is, as well as make some notes on total positivity of the Grassmanian.
 
 {{% toc %}}
 
@@ -77,12 +77,12 @@ The first surprising result today is that this Plücker map is actually injectiv
 > However, let $a = \\{a_1, a_2, ..., a_k\\}$ where $a_1 < a_2 < ... a_k$ and $U_{ij}$ and $V_{ij}$ be the $(i,j)$-th entry of $U$ and $V$ respectively. Then, for any $1 \leq i \leq k$ and $1 \leq j \leq n$, 
 > $$ \begin{align*} 
  U_{ij} &= \mathrm{det}\begin{pmatrix} | & | &  & | & | & |& &|\\\\
-\hat{U}_{a_1} & \hat{U}_{a_2} & \dots & \hat{U}_{j-1} & \hat{U}_i &\hat{U}_{j+1} & \dots & \hat{U}_{c_k} \\\\
+\hat{U}_{a_1} & \hat{U}_{a_2} & \dots & \hat{U}_{a_{i-1}} & \hat{U}_j &\hat{U}_{a_{i+1}} & \dots & \hat{U}_{a_k} \\\\
 | & | &  & | & | & |& &|\end{pmatrix} \\\\
-&= (-1)^r \Delta_{A\setminus \\{j\\} \cup \\{i\\}}(U) \\\\
-&= (-1)^r \Delta_{A\setminus \\{j\\} \cup \\{i\\}}(V) \\\\
+&= (-1)^r \Delta_{A\setminus \\{a_i\\} \cup \\{j\\}}(U) \\\\
+&= (-1)^r \Delta_{A\setminus \\{a_i\\} \cup \\{j\\}}(V) \\\\
 &= \mathrm{det}\begin{pmatrix} | & | &  & | & | & |& &|\\\\
-\hat{V}_{a_1} & \hat{V}_{a_2} & \dots & \hat{V}_{j-1} & \hat{V}_i &\hat{V}_{j+1} & \dots & \hat{V}_{c_k} \\\\
+\hat{V}_{a_1} & \hat{V}_{a_2} & \dots & \hat{V}_{a_{i-1}} & \hat{V}_j &\hat{V}_{a_{j+1}} & \dots & \hat{V}_{a_k} \\\\
 | & | &  & | & | & |& &|\end{pmatrix}
 = V_{ij},
 \end{align*}$$ 
@@ -113,6 +113,7 @@ These are known as **Plücker relations**. To justify the name in this section o
 ## Totally Positive Grassmannian
 
 Next, we move on to discuss the notion of a total positivity. 
+This section is still under construction.
 
 ---
 **Acknowledgements**

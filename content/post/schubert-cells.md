@@ -17,6 +17,8 @@ The theory of algebraic groups has been rather scattered during my experience of
 Today, we will try and compile the various resources, and attempt to translate back and forth
 between the various vocabularies one would encounter when attempting to study the topic.
 
+As always, this post is still under construction!
+
 {{% toc %}}
 
 ---
@@ -102,6 +104,8 @@ We also had this notion of connectedness in the case of matrix Lie groups, and t
 > Thus, the cosets $gH$ are also the connected components of $G$.
 
 I guess it is now fair to also supply a few examples for algebraic groups.
+
+> **Example 10**
 
 ## Structure
 
